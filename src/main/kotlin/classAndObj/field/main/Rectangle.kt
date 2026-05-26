@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.field
+package org.dodo.classAndObj.field.main
 
 class Rectangle(val width: Int, val height: Int) {
     val area: Int // property type is optional since it can be inferred from the getter's return type

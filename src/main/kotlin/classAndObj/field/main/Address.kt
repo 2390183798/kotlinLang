@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.field
+package org.dodo.classAndObj.field.main
 
 class Address {
     var name: String = "Holmes, Sherlock"
