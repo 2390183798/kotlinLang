@@ -30,6 +30,17 @@ class MyView : View {
 - 对应类的加载顺序
   - 先父 再子
 
+#### Rectangle 文件(override0包)
+- 子类用 使用 super 关键字调用其超类的函数与属性
+- super.draw()
+
 #### Rectangle 文件(override包)
-- 非之前的 Rectangle类
-- 
+- 子类中的内部类
+- 用 super@FilledRectangle.draw() 调用 外部类的父类方法
+  - super@Outer 来使用 外部类的super
+
+#### Rectangle 文件(override2包)
+- 虽然不支持多继承，
+- 但是存在 继承和实现 中方法相同， 或者 多实现方法相同的情况
+    - 使用 super<InterfaceName>.method() 明确调用特定接口的实现
+    - kotlin的 interface 的方法，也支持 默认实现

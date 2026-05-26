@@ -4,7 +4,8 @@ import org.dodo.classAndObj.inherit.override.Rectangle
 
 open class Rectangle {
     open fun draw() { println("Drawing a rectangle") }
-    val borderColor: String get() = "black"
+//    val borderColor: String get() = "black"
+    val borderColor: String = "black"
 }
 
 //sampleStart
@@ -15,7 +16,9 @@ class FilledRectangle: Rectangle() {
     }
 
     inner class Filler {
-        fun fill() { println("Filling") }
+        fun fill() {
+            println("Filling")
+        }
         fun drawAndFill() {
             super@FilledRectangle.draw() // 调用 Rectangle 的 draw() 实现
             fill()
@@ -28,4 +31,5 @@ class FilledRectangle: Rectangle() {
 fun main() {
     val fr = FilledRectangle()
     fr.draw()
+    fr.borderColor
 }
