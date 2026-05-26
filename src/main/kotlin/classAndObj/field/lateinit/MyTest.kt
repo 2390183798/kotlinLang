@@ -6,16 +6,29 @@ public class MyTest {
 
     @SetUp
     fun setup() {
-        subject = TestSubject()
+//        subject = TestSubject()
     }
 
     @Test
     @TestInfo(priority = 1, description = "测试基本方法调用")
     fun test() {
-        if(this::subject.isLateinit){
+        // 检查 lateinit 属性 subject 是否已经初始化
+        // 使用属性引用 ::subject 和 isInitialized 来判断初始化状态
+        val isInit = this::subject.isInitialized
+        println("调试信息: subject.isInitialized = $isInit")
+
+//        if(isInit){
+//            println("MyTest subject 已经初始化")
+//            subject.method()
+//        }else{
+//            println("MyTest subject not 初始化")
+//        }
+        if(this::subject.isInitialized){
             println("MyTest subject 已经初始化")
+            subject.method()
+        }else{
+            println("MyTest subject not 初始化")
         }
-        subject.method()
         println("执行测试方法 test()")
     }
 
