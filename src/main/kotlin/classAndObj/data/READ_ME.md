@@ -27,5 +27,7 @@ data class User(val name: String, val age: Int)
   - 自动生成的 equals() 会比较，【主构造函数】中的【所有属性】
   - 只要属性值相同，== 就返回 true
 
-#### 数据类 copy 03
-- 
+#### 数据类 copy 和 解构声明 03
+- copy() 可以复制 传参以外所有的值
+- 解构声明
+  - 将对象 解构 为 对应的属性

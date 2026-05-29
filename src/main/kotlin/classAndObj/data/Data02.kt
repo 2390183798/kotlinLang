@@ -1,12 +1,12 @@
 package org.dodo.classAndObj.data
 
 
-//data class Person(val name: String) {
-//    var age: Int = 0
-//}
-class Person(val name: String) {
+data class Person(val name: String) {
     var age: Int = 0
 }
+//private class Person(val name: String) {
+//    var age: Int = 0
+//}
 
 fun main() {
     //sampleStart
