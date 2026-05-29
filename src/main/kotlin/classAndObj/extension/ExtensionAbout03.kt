@@ -1,6 +1,6 @@
 package org.dodo.classAndObj.extension
 
-class Dd {
+internal class Dd {
 
 }
 
