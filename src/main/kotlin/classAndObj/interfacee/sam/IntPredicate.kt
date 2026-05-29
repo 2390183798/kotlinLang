@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.`interface`.sam
+package org.dodo.classAndObj.interfacee.sam
 
 fun interface IntPredicate {
     fun accept(i: Int): Boolean
