@@ -18,3 +18,17 @@
 - Derived 委托类 有override
   - 没有 override 的方法， 用 委托实现类 的实现
   - 有 override 的方法， 用 Derived 的实现
+
+#### delegated 理解 d03
+- Derived 和 BaseImpl 都 override 属性
+- 他们只会访问自身类， override 的属性
+- 具体 看demo即可
+
+
+#### 属性 by Delegate() 理解 properties01
+- 属性 by 委托类
+- 委托类
+  - operator fun getValue(thisRef: Any?, property: KProperty<*>)
+  - operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String)
+- 委托类 做对应的实现
+
