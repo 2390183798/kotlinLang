@@ -26,6 +26,12 @@
 - 理解 Name 和 Printable 接口
   - 内联 是 final的， 不能继承
   - 可以实现接口
+- 理解 Foo
+  - 装箱，拆箱 等 （没感觉到意义..）
+- 理解 MyInterfaceWrapper
+  - 内联 对接口实现的代理
+  - MyInterfaceWrapper 实现接口
+  - 
 
 
 
