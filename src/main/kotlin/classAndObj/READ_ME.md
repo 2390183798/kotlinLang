@@ -8,4 +8,4 @@
 - [扩展](./extension/READ_ME.md)
 - [数据类](./data/READ_ME.md)
 - [sealed类](./sealed/READ_ME.md)
-- [特殊类](./sPclass/READ_ME.md)
+- [特殊类](./spClass/READ_ME.md)
