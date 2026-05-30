@@ -33,7 +33,7 @@
 - 委托类 做对应的实现
 
 
-#### 属性 by lazy 理解 propLazy
+#### 属性 by lazy 理解 propByLazy
 - 延迟属性委托
 - 格式
   - val lazyValue: Type by lazy {xxx}
@@ -42,7 +42,7 @@
   - 后面，只会执行 lazy {xxx} 中的 return
 
 
-#### 属性 by Delegates.observable 理解 propObs
+#### 属性 by Delegates.observable 理解 propByObs
 - 可观察属性委托
 - 处理可观察委托后
   - 它有三个参数：
@@ -50,7 +50,7 @@
     - 旧值
     - 新值
 
-#### 属性 by xx::yy 理解 propOther
+#### 属性 by xx::yy 理解 propByOther
 - 委托给另一个属性
 - 格式
   - 当前构造，或者属性 中（基础类型）
@@ -60,3 +60,10 @@
   - 顶层属性 中
     - by ::topLevelInt
     - by ::topLevelClass
+
+
+#### 属性 by Map 理解 propByMap
+- 委托给Map
+- map类型
+  - Map
+  - MutableMap 都行
