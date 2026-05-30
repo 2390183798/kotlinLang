@@ -23,6 +23,10 @@
 - 理解 Person
   - 只能有简单的属性 （String 等）
   - 不能有 lateinit/delegated  属性
+- 理解 Name 和 Printable 接口
+  - 内联 是 final的， 不能继承
+  - 可以实现接口
+
 
 
 

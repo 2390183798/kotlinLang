@@ -24,10 +24,24 @@ value class Person(private val fullName: String) {
 }
 
 
+interface Printable {
+    fun prettyPrint(): String
+}
+
+@JvmInline
+value class Name(val s: String) : Printable {
+    override fun prettyPrint(): String = "Let's $s!"
+}
+
 fun main() {
-    val name1 = Person("Kotlin", "Mascot")
-    val name2 = Person("Kodee")
-    name1.greet() // greet` 函数会作为一个静态方法被调用
-    println(name2.length) // 属性的 getter 会作为一个静态方法被调用
+//    val name1 = Person("Kotlin", "Mascot")
+//    val name2 = Person("Kodee")
+//    name1.greet() // greet` 函数会作为一个静态方法被调用
+//    println(name2.length) // 属性的 getter 会作为一个静态方法被调用
+
+
+
+    val name = Name("Kotlin")
+    println(name.prettyPrint()) // 仍然会作为一个静态方法被调用
 }
 
