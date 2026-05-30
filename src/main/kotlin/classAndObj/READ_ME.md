@@ -11,3 +11,4 @@
 - [泛型T](./t/READ_ME.md)
 - [特殊类](./spClass/READ_ME.md)
 - [委托Derived](./delegated/READ_ME.md)
+- [别名typealias](./typealias/READ_ME.md)
