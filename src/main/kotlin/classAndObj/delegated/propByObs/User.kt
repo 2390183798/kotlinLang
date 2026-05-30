@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.delegated.propObs
+package org.dodo.classAndObj.delegated.propByObs
 
 import kotlin.properties.Delegates
 

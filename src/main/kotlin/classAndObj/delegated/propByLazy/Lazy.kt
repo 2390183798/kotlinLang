@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.delegated.propLazy
+package org.dodo.classAndObj.delegated.propByLazy
 
 val lazyValue: String by lazy {
     println("computed!")

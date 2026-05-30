@@ -50,3 +50,13 @@
     - 旧值
     - 新值
 
+#### 属性 by xx::yy 理解 propOther
+- 委托给另一个属性
+- 格式
+  - 当前构造，或者属性 中（基础类型）
+    - by this::xxx
+  - 当前构造，或者属性 中（引用类型）
+    - by xxClass::xxInt
+  - 顶层属性 中
+    - by ::topLevelInt
+    - by ::topLevelClass
