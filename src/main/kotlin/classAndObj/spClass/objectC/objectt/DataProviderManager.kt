@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.spClass.objectC
+package org.dodo.classAndObj.spClass.objectC.objectt
 
 //sampleStart
 // Declares a Singleton object to manage data providers

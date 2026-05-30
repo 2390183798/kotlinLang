@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.spClass.objectC
+package org.dodo.classAndObj.spClass.objectC.dataObject
 
 import java.lang.reflect.Constructor
 
