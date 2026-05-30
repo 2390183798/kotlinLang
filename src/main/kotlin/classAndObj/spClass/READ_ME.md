@@ -40,9 +40,49 @@
     - 内部类， 伴生对象 companion object ，工厂（java 静态成员）
     - 对象表达式， 匿名内部类 - 用于 回调，监听 等 接口实现
 - 代码里面的
-  - 理解 DataProviderManager
+  - 理解 DataProviderManager （object）
     - 单例类， object 声明
-  - 
+  - 理解 MyDataObject （data object）
+    - data object
+      - 既是 data 数据类， 也是 object 单例
+      - toString 默认是现实 类名
+        - 可以 override
+      - data object 中的 == 和 ===
+        - data 的 == 对比的是 equals方法
+          - 同一个data， equals 都是一样的
+        - data 的 === 对比的是 引用地址
+          - 不同对象，引用地址是不一样的
+      - 注意：
+        - 不能 override 方法 equals or hashCode
+  - data object  和 data class 区别
+    - data object 没有的
+      - 没有 copy()
+        - 单例， 不需要copy()
+      - 没有 componentN()
+        - componentN() 是解构用到
+          - 例如: 
+            - component1()
+            - component2()
+            - component3()
+        - 这里属性不会变化，不需要解构
+```kotlin
+data class User(val name: String, val age: Int, val email: String)
+
+fun main() {
+    val user = User("Alice", 25, "alice@example.com")
+    
+    // 方式 1：手动调用 componentN()
+    println(user.component1())  // Alice
+    println(user.component2())  // 25
+    println(user.component3())  // alice@example.com
+    
+    // 方式 2：使用解构声明（更常用）
+    val (name, age, email) = user
+    println(name)   // Alice
+    println(age)    // 25
+    println(email)  // alice@example.com
+}
+```
 
 
 
