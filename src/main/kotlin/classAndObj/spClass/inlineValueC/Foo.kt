@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.sPclass.inline
+package org.dodo.classAndObj.spClass.inline
 
 interface I
 

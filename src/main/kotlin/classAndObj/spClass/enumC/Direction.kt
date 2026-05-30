@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.sPclass.enumC
+package org.dodo.classAndObj.spClass.enumC
 
 import java.util.function.BinaryOperator
 import java.util.function.IntBinaryOperator

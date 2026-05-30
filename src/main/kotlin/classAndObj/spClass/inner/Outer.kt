@@ -1,4 +1,4 @@
-package org.dodo.classAndObj.sPclass.inner
+package org.dodo.classAndObj.spClass.inner
 
 class Outer {
     private val bar: Int = 1
