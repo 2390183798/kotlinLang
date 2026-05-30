@@ -32,3 +32,15 @@
   - operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String)
 - 委托类 做对应的实现
 
+
+#### 属性 by lazy 理解 propLazy
+- 延迟属性委托
+- 格式
+  - val lazyValue: Type by lazy {xxx}
+- 过程
+  - 第一次会执行 lazy {xxx} 所有内容
+  - 后面，只会执行 lazy {xxx} 中的 return
+
+
+#### 属性 by Delegates.observable 理解 propObs
+- 可观察属性委托
