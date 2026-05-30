@@ -123,3 +123,11 @@ fun main() {
   - 其中 getPreferences() = object {xxx}
     - 是通过方法，返回 匿名对象的结构
 
+##### object 申明 和 anonymous object 匿名对象 差异
+- anonymous object 匿名对象
+  - 在使用的地方，直接执行
+- object 申明
+  - 在第一次被访问的时候，延迟初始化
+- companion object 伴生对象
+  - 对应的类 被加载的时候
+    - 和java的静态内部类一样
