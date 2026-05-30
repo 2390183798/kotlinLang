@@ -15,6 +15,7 @@
 
 
 #### 简单总结
-- 暂时不太理解
-- https://www.yuque.com/lihao-yizay/zdotzt/far2i5az3b4idx2u
+- 暂时不总结
+- 泛型：in、out、where
+  - https://www.yuque.com/lihao-yizay/zdotzt/far2i5az3b4idx2u
 
