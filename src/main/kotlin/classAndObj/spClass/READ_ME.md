@@ -31,6 +31,17 @@
 - 理解 MyInterfaceWrapper
   - 内联 对接口实现的代理
   - MyInterfaceWrapper 实现接口
+
+
+#### 对象类 object
+- 理解 object关键字
+  - 通常处理
+    - 单例类， 对象声明 manager 等
+    - 内部类， 伴生对象 companion object ，工厂（java 静态成员）
+    - 对象表达式， 匿名内部类 - 用于 回调，监听 等 接口实现
+- 代码里面的
+  - 理解 DataProviderManager
+    - 单例类， object 声明
   - 
 
 
