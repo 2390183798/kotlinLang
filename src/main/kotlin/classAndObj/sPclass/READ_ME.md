@@ -17,7 +17,12 @@
     - for (f in IntArithmetics.entries)
 
 #### 内联类 Inline value classes
-
+- 理解 Password 类
+  - value class 开头
+  - 标注 @JvmInline
+- 理解 Person
+  - 只能有简单的属性 （String 等）
+  - 不能有 lateinit/delegated  属性
 
 
 
