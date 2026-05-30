@@ -1,5 +1,8 @@
 package org.dodo.classAndObj.sPclass.enum
 
+import java.util.function.BinaryOperator
+import java.util.function.IntBinaryOperator
+
 enum class Direction {
     NORTH, SOUTH, WEST, EAST
 }
@@ -22,4 +25,30 @@ enum class ProtocolState {
     };
 
     abstract fun signal(): ProtocolState
+}
+
+
+enum class IntArithmetics : BinaryOperator<Int>, IntBinaryOperator {
+    PLUS {
+        override fun apply(t: Int, u: Int): Int = t + u
+    },
+    TIMES {
+        override fun apply(t: Int, u: Int): Int = t * u
+    };
+
+    override fun applyAsInt(t: Int, u: Int) = apply(t, u)
+}
+
+enum class RGB { RED, GREEN, BLUE }
+
+fun main() {
+//    val a = 13
+//    val b = 31
+//    for (f in IntArithmetics.entries) {
+//        println("$f($a, $b) = ${f.apply(a, b)}")
+//    }
+
+
+    for (color in RGB.entries) println(color.toString()) // prints RED, GREEN, BLUE
+    println("The first color is: ${RGB.valueOf("RED")}")
 }
