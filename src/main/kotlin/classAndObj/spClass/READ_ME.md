@@ -107,3 +107,19 @@ fun main() {
 - 理解 Factory
   - 伴生对象，实现接口
   - 就是类型的转变，没啥区别
+
+##### 匿名类 anonymous object
+- 直接匿名类
+  - object {}
+  - object { override fun toString() = "hello" }
+- 理解 BankAccount 中
+  - temporaryAccount 的 匿名内部类
+    - 处理 BankAccount 的初始化
+    - 处理 Transaction 接口的实现
+  - specialTransaction()
+    - 写内部类，以及 内部类的调用
+  - 整个其实是用 方法包了一层 匿名内部类的代理实现
+- 理解 UserPreferences
+  - 其中 getPreferences() = object {xxx}
+    - 是通过方法，返回 匿名对象的结构
+
