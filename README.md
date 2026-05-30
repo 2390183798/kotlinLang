@@ -3,3 +3,4 @@
 用于全面了解kotlin的使用
 
 - [类和对象](src/main/kotlin/classAndObj/READ_ME.md)
+- [函数](src/main/kotlin/func/READ_ME.md)
