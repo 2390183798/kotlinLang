@@ -10,4 +10,4 @@
 - [sealed类](./sealed/READ_ME.md)
 - [泛型T](./t/READ_ME.md)
 - [特殊类](./spClass/READ_ME.md)
-- 
+- [委托Derived](./delegated/READ_ME.md)
