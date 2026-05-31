@@ -60,3 +60,6 @@
 
 
 #### 协程 yield  p04
+- while (isActive) 处理
+- try ~ finally 中 处理
+- 
