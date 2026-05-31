@@ -59,7 +59,11 @@
   - 只能等 协程结束后的 join
 
 
-#### 协程 yield  p04
-- while (isActive) 处理
-- try ~ finally 中 处理
-- 
+#### 协程 配合cancel  p04
+- while (isActive) 处理    ::run01
+- try ~ finally 中 处理    ::run02
+- 好的处理，在结束前，需要收尾     ::run03
+  - try ~ finally中
+  - withContext(NonCancellable) {
+  - 里面可以加上新的 suspend 代码
+  - 执行完成后，再 join到 主线程
