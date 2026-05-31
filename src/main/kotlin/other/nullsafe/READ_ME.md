@@ -21,3 +21,15 @@
     - 要么返回 长度int
     - 要么null的时候，返回0
 
+#### 非空断言 !!
+- 尽量少用
+
+#### null的接收 p03
+- 对应类， 覆写toString
+  - 如果空，返回 "null"
+    - 可以避免空指针
+- data class 的toString
+  - 空会返回 null
+  - 对应字段 也会返回 null 的string
+
+
