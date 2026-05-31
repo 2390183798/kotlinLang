@@ -4,3 +4,4 @@
 
 - [类和对象](src/main/kotlin/classAndObj/READ_ME.md)
 - [函数](src/main/kotlin/func/READ_ME.md)
+- [其他](src/main/kotlin/other/READ_ME.md)
