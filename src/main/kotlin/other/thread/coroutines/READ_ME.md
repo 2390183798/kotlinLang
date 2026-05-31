@@ -67,3 +67,14 @@
   - withContext(NonCancellable) {
   - 里面可以加上新的 suspend 代码
   - 执行完成后，再 join到 主线程
+
+
+#### 协程 超时 p05
+- withTimeout(1300L)    ::run01
+  - 里面的超时会抛异常
+  - TimeoutCancellationException
+- withTimeoutOrNull(1300L)    ::run02
+  - 接收返回值的话
+  - 超时返回 null
+- 超时释放资源
+  - 在 finally中 记得释放资源
