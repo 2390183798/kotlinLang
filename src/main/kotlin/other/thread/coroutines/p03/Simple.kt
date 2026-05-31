@@ -10,10 +10,24 @@ fun run01() = runBlocking {
             delay(500L)
         }
     }
-    delay(1300L) // 延迟一段时间
+//    delay(1300L) // 延迟一段时间
+//    println("main: I'm tired of waiting!")
+////    job.join() // 等待作业执行结束
+//    job.cancel() // 取消该作业
+//    job.join() // 等待作业执行结束
+//    println("main: Now I can quit.")
+
+    delay(1300L)
     println("main: I'm tired of waiting!")
-    job.cancel() // 取消该作业
-    job.join() // 等待作业执行结束
+
+    println(">>> 准备调用 cancel()")
+    job.cancel()  // 立即返回
+    println(">>> cancel() 已返回，但协程可能还在运行")
+
+    println(">>> 准备调用 join()")
+    job.join()    // 等待协程真正结束
+    println(">>> join() 已返回，协程确实结束了")
+
     println("main: Now I can quit.")
 //sampleEnd
 }

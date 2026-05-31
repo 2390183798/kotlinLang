@@ -24,6 +24,18 @@ suspend fun doWorld() = coroutineScope { //this: CoroutineScope
 //sampleEnd
 
 fun run02() = runBlocking {
+    val job = launch { // launch a new coroutine and keep a reference to its Job
+        delay(2000L)
+        println("World 01!")
+    }
+
+    println("Hello")
+//    job.join() // wait until child coroutine completes
+    job.join() // wait until child coroutine completes
+    println("Done")
+}
+
+fun run03() = runBlocking {
     val jobEnd = launch { // launch a new coroutine and keep a reference to its Job
         delay(1000L)
         println("World 03!")
@@ -40,12 +52,13 @@ fun run02() = runBlocking {
     println("Hello")
     job2.join() // wait until child coroutine completes
     job.join() // wait until child coroutine completes
-    jobEnd.start()
+    jobEnd.join()
     println("Done")
 }
 
 
 fun main() {
 //    run01()
-    run02()
+//    run02()
+    run03()
 }

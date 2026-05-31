@@ -32,7 +32,19 @@
 - coroutineScope 中
   - 多个launch
 - job.join() 理解
+  - join() 后面的代码，会等待 协程完成后
+  - 也就是 join 进来，才会执行
 - 多个 job.join()
 
 #### 协程 取消/超时 p03
 - 取消 job.cancel()
+  - 异步发送取消
+- 过程
+  - 先job.cancel()
+  - 再job.join()
+  - 收到 cancel， job也会触发 join
+  - 主线程 join后面的代码，
+    - 收到join后
+    - 会执行
+
+
