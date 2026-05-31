@@ -39,12 +39,24 @@
 #### 协程 取消/超时 p03
 - 取消 job.cancel()
   - 异步发送取消
-- 过程
-  - 先job.cancel()
-  - 再job.join()
-  - 收到 cancel， job也会触发 join
-  - 主线程 join后面的代码，
-    - 收到join后
-    - 会执行
+- cancel 和 join 过程  ::run01
+    - 先job.cancel()
+    - 再job.join()
+    - 收到 cancel， job也会触发 join
+    - 主线程 join后面的代码，
+      - 收到join后
+      - 会执行
+- cancel 和 join 替代
+  - job.cancelAndJoin()
+- 如果 协程cpu一直处理    ::run02
+  - job.cancelAndJoin()
+  - 是取消不掉的 
+  - 会等到执行完，再join
+- 捕获cancel的异常    ::run03
+  - job.cancelAndJoin() 触发后
+  - job中 捕获异常，会捕获 cancel的异常
+    - 不会触发cancel
+  - 只能等 协程结束后的 join
 
 
+#### 协程 yield  p04
