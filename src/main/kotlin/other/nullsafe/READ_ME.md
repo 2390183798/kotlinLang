@@ -32,4 +32,17 @@
   - 空会返回 null
   - 对应字段 也会返回 null 的string
 
+#### let 函数 p03
+- xxx?.let {xxx}
+- xxx 不空的时候， 执行 let 里面的函数
 
+
+#### 安全的类型转换 p04
+- as? 转型
+  - val aInt: Int? = a as? Int
+- 可以转成 ？类型的 对象
+
+
+#### 可空类型的集合
+- 只想保留其中非空的元素
+  - 用 filterNotNull() 函数
